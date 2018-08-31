@@ -26,6 +26,8 @@ Well worked presentations
 Detailed, clear documentation
 Peer Review of all major code
 
+	We are going to win this thing!!! Those t-shirts better come in Medium size.
+
 Strategies to fulfill these standards:
 GitHub - Version Control
 Robot must pass drop tests
@@ -47,7 +49,7 @@ No “ownership” of ideas. Members will not get defensive when their ideas are
 Strategies for keeping on task (task maintenance):
 Each person will walk away from every meeting with assigned “tasks” which they are expected to complete by certain deadlines. Consistently missing these deadlines will lead to evaluation of that person’s position on the team and shall count as “Failing to Follow Procedure and Fulfill Expectations”;
 Preferences for leadership (informal, formal, individual, shared):
-informal
+Informal
 Personal Accountability:
 Expected individual attendance, punctuality, and participation at all team meetings:
 Team members are all expected to show up within 5 minutes of a meetings planned start time. If a member is consistently late, we will evaluate whether they need the meeting time to be modified.
@@ -66,8 +68,3 @@ Describe, as a group, you would handle infractions of any of the obligations of 
 The group will discuss it in a meeting, and consider ways to make it easier on said violator to avoid future infractions. 
 Describe what your team will do if the infractions continue:
 Should infractions ensue, a mugshot of the infractor will be placed in the Hall of Shame, right at the top of the team’s website. 
-
-
-Sincerely,
-
-Alberto Lopez De
