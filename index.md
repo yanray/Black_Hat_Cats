@@ -1,17 +1,17 @@
-## The Black_Hat_Cats welcome 
+## The Black_Hat_Cats welcome you
 
-Check the weekly updates of our project in the links below.
+Check weekly updates of our project in the links below.
 
 
 ### Brains behind the Operation
 
-Yanrui Wang a.k.a. (introduce awesome nickname) [:email:](mailto:yw2226@cornell.edu)
+[Yanrui Wang](mailto:yw2226@cornell.edu) a.k.a. (introduce awesome nickname)
 
-Ian Switzer a.k.a. (introduce awesome nickname) [:email:](mailto:ics9@cornell.edu)
+[Ian Switzer](mailto:ics9@cornell.edu) a.k.a. (introduce awesome nickname) 
  
-Hadi Alzayer a.k.a. (introduce awesome nickname) [:email:](mailto:ha366@cornell.edu)
+[Hadi Alzayer](mailto:ha366@cornell.edu) a.k.a. (introduce awesome nickname) 
 
-Alberto Lopez Delgado a.k.a. (introduce awesome nickname) [:email:](mailto:al2367@cornell.edu)
+[Alberto Lopez Delgado](mailto:al2367@cornell.edu) a.k.a. (introduce awesome nickname) 
 
 
 ### Labs
@@ -32,4 +32,4 @@ Milestone 3:
 
 Milestone 4:
 
-### Team Contract
+#### [Team Contract](https://github.com/Albrt37/Black_Hat_Cats/tree/master/docs/team_contract.pdf)
