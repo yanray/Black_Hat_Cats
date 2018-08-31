@@ -1,2 +1,2 @@
-##Team Black_Hat_Cats 
-##Team contract (https://github.com/yanray/Black_Hat_Cats/blob/master/TeamContract.md)
+## Team 13
+Hello! Welcome to team Lucky 13's running webpage! We'll be documenting all of our progress here, as well as our design decisions, struggles, and triumphs! In order to ensure that we can work as efficiently as possible, and that we are all aware of each other's expectations, we've created and signed a [Team Contract]((https://github.com/yanray/Black_Hat_Cats/blob/master/TeamContract.md)). 
