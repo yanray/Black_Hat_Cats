@@ -5,7 +5,6 @@ Check weekly updates of our project in the links below.
 [Home](https://yanray.github.io/Black_Hat_Cats/)
 [Team Contract](https://raw.githubusercontent.com/yanray/Black_Hat_Cats/master/TeamContract.html)
 
-
 ### Brains behind the Operation
 
 [Yanrui Wang](mailto:yw2226@cornell.edu) a.k.a. (introduce awesome nickname)
