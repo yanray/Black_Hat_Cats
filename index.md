@@ -1,6 +1,7 @@
 ## The Black_Hat_Cats welcome you
 
 Check weekly updates of our project in the links below.
+
 [Home](https://yanray.github.io/Black_Hat_Cats/)
 [Team Contract](https://raw.githubusercontent.com/yanray/Black_Hat_Cats/master/TeamContract.html)
 
