@@ -2,7 +2,7 @@
 
 Check weekly updates of our project in the links below.
 
-###[Team Contract](https://github.com/yanray/Black_Hat_Cats/blob/master/TeamContract.html)
+[Team Contract](https://raw.githubusercontent.com/yanray/Black_Hat_Cats/master/TeamContract.html)
 
 
 ### Brains behind the Operation
