@@ -1,64 +1,61 @@
 #ECE 3400, Fall 2018
-Team # 13
-Team Members: Ian Switzer, Alberto Lopez Delgado, Hadi Alzayer, Yanrui Wang
+##Team # 13
+###Team Members: Ian Switzer, Alberto Lopez Delgado, Hadi Alzayer, Yanrui Wang
 
-1. Day, time, and place for regular team meetings:
-● UH142, Friday 11.15-12.05pm, weekly. (We suggest allocating more time
-towards the end of the semester)
-● Lab time, Wednesdays 7:30-10:30
-● Sundays at 7:30 am, 1 hour unless otherwise necessary
+##1. Day, time, and place for regular team meetings:
+    ● UH142, Friday 11.15-12.05pm, weekly. (We suggest allocating more time
+    towards the end of the semester)
+    ● Lab time, Wednesdays 7:30-10:30
+    ● Sundays at 7:30 am, 1 hour unless otherwise necessary
 
-2. Preferred method of communication in order to inform each other of team meetings,
+##2. Preferred method of communication in order to inform each other of team meetings,
 announcement, updates, reminders, problems:
-The team will use the app GroupMe as the main means of communication. We will also
-share relevant content and media via email and gitHub.
+    The team will use the app GroupMe as the main means of communication. We will also
+    share relevant content and media via email and gitHub.
 
-3. Decision-making policy (by consensus? by majority vote?):
-Unanimous, baring unnecessary delays (>1 meeting).
+##3. Decision-making policy (by consensus? by majority vote?):
+    Unanimous, baring unnecessary delays (>1 meeting).
 
-4. Method for setting and following meeting agendas (Who will set each agenda? When?
-How will team members be notified/reminded? Who will be responsible for the team
-following the agenda during a team meeting? What will be done to keep the team on
-track during a meeting?):
-Group discussions on a meeting by meeting basis on what “in general” will get done. A
-general overview for semester long agenda will be decided by the group in an early
-meeting.
-5. Method of record keeping (Who will be responsible for recording & disseminating
+##4. Method for setting and following meeting agendas (Who will set each agenda? When?
+  How will team members be notified/reminded? Who will be responsible for the team
+  following the agenda during a team meeting? What will be done to keep the team on
+  track during a meeting?):
+    Group discussions on a meeting by meeting basis on what “in general” will get done. A
+    general overview for semester long agenda will be decided by the group in an early
+    meeting.
+
+##5. Method of record keeping (Who will be responsible for recording & disseminating
 minutes? How & when will the minutes be disseminated? Where will all agendas &
 minutes be kept?):
-Team member Alberto will be responsible for recording and disseminating meeting
-minutes. They will be kept in a separate section on the website.
-Work Quality:
+    Team member Alberto will be responsible for recording and disseminating meeting
+    minutes. They will be kept in a separate section on the website.
+###Work Quality:
 1. Project standards (What is a realistic level of quality for team presentations, collaborative
 writing, individual research, preparation of drafts, peer reviews, etc.?):
 We all want to do very well in this course, so we choose to hold all elements to a high
 level of quality. That includes:
-● Well worked presentations
-● Detailed, clear documentation
-● Peer Review of all major code
+    ● Well worked presentations
+    ● Detailed, clear documentation
+    ● Peer Review of all major code
 We are going to win this thing!!! Those t-shirts better come in Medium size.
 2. Strategies to fulfill these standards:
-● GitHub - Version Control
-● Robot must pass drop tests
+    ● GitHub - Version Control
+    ● Robot must pass drop tests
 Team Participation:
 1. Strategies to ensure cooperation and equal distribution of tasks:
-● Peer mentor and subteam
-○ Team member will mentor coding, presentation and website skills to one
-another, especially in talented areas
-● Distributed coding task in lab session
-● Encourage people who don’t have a lot of experience with a task to try it out and
-learn
+    ● Peer mentor and subteam
+      ○ Team member will mentor coding, presentation and website skills to one another,
+      especially in talented areas
+    ● Distributed coding task in lab session
+    ● Encourage people who don’t have a lot of experience with a task to try it out and learn
 2. Strategies for encouraging/including ideas from all team members (team maintenance):
-● Brainstorm during team meetings
-○ Every team member should share own thoughts and ideas on specific
-issues
-● All members are encouraged to present any ideas they might have, regardless of
-how “good” they are
-○ Other members must fully hear this idea out, but are allowed to provide
-honest criticism
-● No “ownership” of ideas. Members will not get defensive when their ideas are
-criticized. Once an idea is presented, it is no longer an individual’s idea, it
-belongs to the group.
+    ● Brainstorm during team meetings
+      ○ Every team member should share own thoughts and ideas on specific issues
+    ● All members are encouraged to present any ideas they might have, regardless of how “good” they are
+     ○ Other members must fully hear this idea out, but are allowed to provide honest criticism
+    ● No “ownership” of ideas. Members will not get defensive when their ideas are
+    criticized. Once an idea is presented, it is no longer an individual’s idea, it
+    belongs to the group.
 3. Strategies for keeping on task (task maintenance):
 Each person will walk away from every meeting with assigned “tasks” which they are
 expected to complete by certain deadlines. Consistently missing these deadlines will
