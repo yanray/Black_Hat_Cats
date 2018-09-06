@@ -1,5 +1,7 @@
 # Lab 1: Microcontroller
 
+[Home](https://yanray.github.io/Black_Hat_Cats/)
+
 ###Objective
 Learn basics of Arduino io by controlling LEDs and motors
 Assemble basic body for a robot and use the Arduino to move in a basic square
@@ -12,6 +14,8 @@ Assemble basic body for a robot and use the Arduino to move in a basic square
 ##step 1: Pre-lab work
 
 ## step 2: Internal LED Blink
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/iQ6RLm8GsXc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 ## step 3: External LED Blink
 
@@ -38,12 +42,7 @@ Assemble basic body for a robot and use the Arduino to move in a basic square
 
 
 
-### Test
-<iframe width="560" height="315" src="https://www.youtube.com/embed/iQ6RLm8GsXc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-## Objective
-Learn basics of Arduino io by controlling LEDs and motors
-Assemble basic body for a robot and use the Arduino to move in a basic square
 
 ## Coding
 
