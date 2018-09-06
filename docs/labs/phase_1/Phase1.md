@@ -38,14 +38,3 @@ Assemble basic body for a robot and use the Arduino to move in a basic square
 
 
 
-
-
-
-
-
-
-## Coding
-
-
-
-[![Text([https://www.youtube.com/watch?v=iQ6RLm8GsXc/0.jpg)](https://www.youtube.com/watch?v=iQ6RLm8GsXc)
