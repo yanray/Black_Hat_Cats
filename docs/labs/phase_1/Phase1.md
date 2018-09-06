@@ -13,6 +13,9 @@ Assemble basic body for a robot and use the Arduino to move in a basic square
 
 ## step 1: Pre-lab work
 
+[Click here](https://www.arduino.cc/en/Main/Software) to download Arduino IDE.
+After install Arduino IDE, you will see this. 
+
 ## step 2: Internal LED Blink
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/iQ6RLm8GsXc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
