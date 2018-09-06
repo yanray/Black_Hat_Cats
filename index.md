@@ -16,7 +16,7 @@ Check weekly updates of our project in the links below.
 
 
 ### Labs
-Phase 1: (introduce title with ominous overtones)
+Phase 1: (The devil is born)
 
 Phase 2: (introduce title with ominous overtones)
 
