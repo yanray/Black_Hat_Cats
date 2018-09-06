@@ -29,7 +29,7 @@ Assemble basic body for a robot and use the Arduino to move in a basic square
 
 ## step 8: Make the Robot Go !
 
-
+## Extra step: 
 
 
 
