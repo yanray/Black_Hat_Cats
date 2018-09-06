@@ -1,14 +1,15 @@
 # Lab 1: Microcontroller
 
-### Objectives
-
+###Objective
+Learn basics of Arduino io by controlling LEDs and motors
+Assemble basic body for a robot and use the Arduino to move in a basic square
 
 ### Teams
 **subteam 1**: Hadi Alzayer, Alberto Lopez Delgado
 
 **subteam 2**: Yanrui Wang , Ian Switzer
 
-## step 1: Pre-lab work
+##step 1: Pre-lab work
 
 ## step 2: Internal LED Blink
 
