@@ -2,10 +2,40 @@
 
 ### Objectives
 
+
 ### Teams
 **subteam 1**: Hadi Alzayer, Alberto Lopez Delgado
 
 **subteam 2**: Yanrui Wang , Ian Switzer
+
+## step 1: Pre-lab work
+
+## step 2: Internal LED Blink
+
+## step 3: External LED Blink
+
+## step 4: Read the potentiometer 
+
+## step 5: Analog Output (PWM)
+
+## step 6: Parallax Servos 
+
+## step 7: Assemble Impressive Robot 
+
+## step 8: Make the Robot Go !
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ### Test
 <iframe width="560" height="315" src="https://www.youtube.com/embed/iQ6RLm8GsXc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
