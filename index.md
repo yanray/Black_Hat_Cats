@@ -16,7 +16,7 @@ Check weekly updates of our project in the links below.
 
 
 ### Labs
-[Phase 1:](Black_Hat_Cats/docs/labs/phase%201/Phase1.md)
+[Phase 1:](/docs/labs/phase_1/Phase1.md )
 
 Phase 2: (introduce title with ominous overtones)
 
