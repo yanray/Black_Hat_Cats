@@ -8,8 +8,6 @@
 **subteam 2**: Yanrui Wang , Ian Switzer
 
 ### Test
-https://www.youtube.com/watch?v=iQ6RLm8GsXc
-
 <iframe width="560" height="315" src="https://www.youtube.com/embed/iQ6RLm8GsXc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 ## Objective
