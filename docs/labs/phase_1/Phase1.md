@@ -2,7 +2,7 @@
 
 [Home](https://yanray.github.io/Black_Hat_Cats/)
 
-###Objective
+### Objective
 Learn basics of Arduino io by controlling LEDs and motors
 Assemble basic body for a robot and use the Arduino to move in a basic square
 
@@ -11,7 +11,7 @@ Assemble basic body for a robot and use the Arduino to move in a basic square
 
 **subteam 2**: Yanrui Wang , Ian Switzer
 
-##step 1: Pre-lab work
+## step 1: Pre-lab work
 
 ## step 2: Internal LED Blink
 
