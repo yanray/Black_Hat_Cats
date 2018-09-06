@@ -8,21 +8,21 @@
 
 **subteam 2**: Yanrui Wang , Ian Switzer
 
-### step 1: Pre-lab work
+## step 1: Pre-lab work
 
-### step 2: Internal LED Blink
+## step 2: Internal LED Blink
 
-### step 3: External LED Blink
+## step 3: External LED Blink
 
-### step 4: Read the potentiometer 
+## step 4: Read the potentiometer 
 
-### step 5: Analog Output (PWM)
+## step 5: Analog Output (PWM)
 
-### step 6: Parallax Servos 
+## step 6: Parallax Servos 
 
-### step 7: Assemble Impressive Robot 
+## step 7: Assemble Impressive Robot 
 
-### step 8: Make the Robot Go !
+## step 8: Make the Robot Go !
 
 
 
