@@ -16,7 +16,7 @@ Check weekly updates of our project in the links below.
 
 
 ### Labs
-[Phase 1:](https://raw.githubusercontent.com/yanray/Black_Hat_Cats/master/docs/labs/phase%201/Phase1.md)
+[Phase 1:](https://github.com/yanray/Black_Hat_Cats/blob/master/docs/labs/phase%201/Phase1.md)
 
 Phase 2: (introduce title with ominous overtones)
 
