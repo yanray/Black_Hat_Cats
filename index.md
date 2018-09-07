@@ -1,8 +1,6 @@
 ## The Black_Hat_Cats welcome you
 
-Check weekly updates of our project in the links below.
-
-[Home](https://yanray.github.io/Black_Hat_Cats/)
+Stay tuned for weekly updates of our doomsday device.
 
 ### Brains behind the Operation
 
