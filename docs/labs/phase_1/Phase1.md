@@ -11,14 +11,14 @@ Assemble basic body for a robot and use the Arduino to move in a basic square
 
 **subteam 2**: Yanrui Wang , Ian Switzer
 
-## step 1: Pre-lab work
+## Step 1: Pre-lab work
 
 [Click here](https://www.arduino.cc/en/Main/Software) to download Arduino IDE.
 
 After install Arduino IDE, you will see this.
 ![ ](./images/Lab_1/20180905_210630.jpg)
 
-## step 2: Internal LED Blink
+## Step 2: Internal LED Blink
 
 **Firstly**, Open Ardunio IDE -> File -> Examples -> 1.Basics -> Blink
 
@@ -32,7 +32,7 @@ After install Arduino IDE, you will see this.
 
 [We need a place to put code and need some explanation for code !!! please]
 
-## step 3: External LED Blink
+## Step 3: External LED Blink
 
 After Internal LED Blink, Let us Blink an External LED ! 
 
@@ -46,7 +46,7 @@ Pick up a LED and a Resistor. [Need Picture of LED and Resistor here !!!!]
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/0pE7rAklaJY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-## step 4: Read the potentiometer 
+## Step 4: Read the potentiometer 
 
 After External LED Blink, Let us Read Analog value of Potentiometer ! 
 
@@ -59,17 +59,17 @@ Pick up a Potentiometer and a Resistor. [Need Picture of LED and Resistor here !
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/qJ6spCfECX0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-## step 5: Analog Output (PWM)
+## Step 5: Analog Output (PWM)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/FzOQpxXkZDM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-## step 6: Parallax Servos 
+## Step 6: Parallax Servos 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/gK3PRNAZcIo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-## step 7: Assemble Impressive Robot 
+## Step 7: Assemble Impressive Robot 
 
-## step 8: Make the Robot Go !
+## Step 8: Make the Robot Go !
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/J6l1jtC9Hv0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
