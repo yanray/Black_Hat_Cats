@@ -3,8 +3,9 @@
 # Lab 1: Microcontroller
 
 ### Objective
-Learn basics of Arduino io by controlling LEDs and motors
-Assemble basic body for a robot and use the Arduino to move in a basic square
+•Learn basics of Arduino io by controlling LEDs and motors
+
+•Assemble basic body for a robot and use the Arduino to move in a basic square
 
 ### Teams
 **subteam 1**: Hadi Alzayer, Alberto Lopez Delgado
@@ -17,7 +18,7 @@ Assemble basic body for a robot and use the Arduino to move in a basic square
 
 After install Arduino IDE, you will see this.
 
-![](images/Lab_1/20180905_210630.jpg)
+![alt txt](Arduino_IDE.png)
 
 ## Step 2: Internal LED Blink
 
