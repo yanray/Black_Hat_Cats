@@ -16,6 +16,7 @@ Assemble basic body for a robot and use the Arduino to move in a basic square
 [Click here](https://www.arduino.cc/en/Main/Software) to download Arduino IDE.
 
 After install Arduino IDE, you will see this.
+
 ![](images/Lab_1/20180905_210630.jpg)
 
 ## Step 2: Internal LED Blink
@@ -30,22 +31,6 @@ After install Arduino IDE, you will see this.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/iQ6RLm8GsXc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-Here is the code for blinking the internal LED, to use it with an external LED, replace LED_BUILTIN with the desired output pin.
-
-``` c++
-int led_pin = LED_BUILTIN;
-void setup() {
-  pinMode(led_pin, OUTPUT);
-}
-
-// the loop function runs over and over again forever
-void loop() {
-  digitalWrite(led_pin, HIGH);   // turn the LED on (HIGH is the voltage level)
-  delay(1000);                       // wait for a second
-  digitalWrite(led_pin, LOW);    // turn the LED off by making the voltage LOW
-  delay(1000);                       // wait for a second
-}
-```
 [We need a place to put code and need some explanation for code !!! please]
 
 ## Step 3: External LED Blink
@@ -77,6 +62,9 @@ Pick up a Potentiometer and a Resistor. [Need Picture of LED and Resistor here !
 
 ## Step 5: Analog Output (PWM)
 
+In this step, we connect **Step 3** and **Step 4** to read the potentiometer and put the output to External LED. 
+***Note *** You could learn PWM [Click here](https://cei-lab.github.io/ece3400-2017/tutorials/PWM/PWM.html).
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/FzOQpxXkZDM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 ## Step 6: Parallax Servos 
@@ -92,17 +80,14 @@ Pick up a Potentiometer and a Resistor. [Need Picture of LED and Resistor here !
 ## Extra step: 
 
 The modification I added since we had extra time was a basic microphone circuit. This was done before realizing this is very similar to the next lab. Regardless, I guess we are ahead of the game.
-
-
 [AUDIO CIRCUIT FILE]
 The way the circuit works is as follows. The signal starts at the microphone. One leg of the microphone is pulled up to 5 volts through a resistor, the other is set to ground. When sound hits the microphone the microphone alternates the voltage on its pulled up leg as a direct representation of the sound. I then isolate the AC component  by passing it through a capacitor. This signal then goes to the noninverting side of an LM358 op amp. In this case we use a 25k resistor and a 50 ohm resistor to amplify by a factor of 501.
-
 [waveform picture]
-If we left it like this we would have a detectable signal. Unfortunately this signal would vary between about +-2.5 volts, so we add a dc offset through two 1k resistors to the noninverting input of the op amp. I also added a capacitor in line with the 50 ohms resistor to make it so the dc offset is not amplified. I then fed this signal to the analog input of the Arduino Uno. This signal is sampled at a rate of 9.5kHz until 128 samples are collected. The way I have it currently setup it can easily detect a signal anywhere between 400hz and 4.25khz. I had to “detach” the servos while sampling or else the PWM interrupts would interfere with sampling.
-
+If we left it like this we would have a detectable signal. Unfortunately this signal would vary between about +-2.5 volts, so we add a dc offset through two 1k resistors to the noninverting input of the op amp. I also added a capacitor in line with the 50 ohms resistor to make it so the dc offset is not amplified. I then fed this signal to the analog input of the Arduino Uno. This signal is sampled at a rate of 9.5kHz until 128 samples are collected. The way I have it currently setup it can easily detect a signal anywhere between 100hz and 4.25khz. I had to “detach” the servos while sampling or else the PWM interrupts would interfere with sampling.
 [VIDEO OF IT WOKRING]
 From there frequency of the whistle is used to control whether the robot is moving straight, turning, or stopped, depending on how high the frequency is.
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ufud2p73alA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 
 
