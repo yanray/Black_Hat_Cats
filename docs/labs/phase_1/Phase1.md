@@ -31,7 +31,7 @@ After install Arduino IDE, you will see this.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/iQ6RLm8GsXc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-[We need a place to put code and need some explanation for code !!! please]
+[Coding for Step1]
 
 ``` c++
 int led_pin = LED_BUILTIN;
