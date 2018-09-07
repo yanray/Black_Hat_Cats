@@ -35,4 +35,4 @@ Milestone 4:
 
 #### [Team Contract](https://github.com/Albrt37/Black_Hat_Cats/tree/master/docs/team_contract.pdf)
 
-#### [Meeting Minutes]()
+#### [Meeting Minutes](MeetingMinutes.md)
