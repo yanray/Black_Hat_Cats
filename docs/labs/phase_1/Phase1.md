@@ -80,15 +80,86 @@ Pick up a Potentiometer and a Resistor. [Need Picture of LED and Resistor here !
 In this step, we connect **Step 3** and **Step 4** to read the potentiometer and put the output to External LED. 
 ***Note *** You could learn PWM [Click here](https://cei-lab.github.io/ece3400-2017/tutorials/PWM/PWM.html).
 
+To use PWM as an input, you can use analogWrite to an ‘analog’ like output:
+```c++
+analogWrite(output_pin, value);
+```
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/FzOQpxXkZDM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 ## Step 6: Parallax Servos 
+Unlike a regular servo that is usually limited to 180 degrees and control the angle, a continuous servo (like the one used for this lab) can be controlled with direction and speed.
+Servo
 
+To run a servo, you can use Arduino’s servo library and run this code:
+
+```c++
+#include <Servo.h>
+int servo_pin = 5;
+Servo myServo;
+
+void setup() {
+    myServo.attach(servo_pin);
+}
+void loop() {
+  move_motor(myServo, 180);
+}
+void move_motor(Servo motor, int value){
+	int new_value=value;
+	motor.write(new_value);
+}
+
+```
 <iframe width="560" height="315" src="https://www.youtube.com/embed/gK3PRNAZcIo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 ## Step 7: Assemble Impressive Robot 
 
 ## Step 8: Make the Robot Go !
+Now using what we have done to run the motors, we can use it to control two motors to move in a square. Here is the code for it: 
+``` c++
+ #include <Servo.h>
+int MAX_READING = 1023;
+int analog_pin = A0;
+int led_pin = 11;
+int leftServo_pin = 5;
+int rightServo_pin = 6;
+Servo leftServo;
+Servo rightServo;
+void start_now() {
+  Serial.begin(9600);
+  pinMode(analog_pin, INPUT);
+  pinMode(led_pin, OUTPUT);
+  leftServo.attach(leftServo_pin);
+  rightServo.attach(rightServo_pin); //check pin
+}
+void setup() {
+  start_now();
+}
+void loop() {
+  //int value_analogRead = analogRead(analog_pin);
+  //Serial.print(value_analogRead*5.0/MAX_READING);
+  Serial.println(" Volts");
+  //output_to_led(value_analogRead);
+  int motor_value = 180;
+  move_motor(leftServo, 180);
+  move_motor(rightServo, 180);
+  delay(635);
+move_forward();
+  delay(1000);
+}
+void output_to_led(int value) {
+  int new_value=map(value,0,MAX_READING,0,255);
+  analogWrite(led_pin,new_value);
+}
+void move_motor(Servo motor, int value){
+	int new_value=value;
+	motor.write(new_value);
+}
+void move_forward(){
+ 	move_motor(leftServo, 0);
+  	move_motor(rightServo,180);
+}
+```
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/J6l1jtC9Hv0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
