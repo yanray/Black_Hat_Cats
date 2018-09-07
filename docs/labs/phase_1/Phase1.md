@@ -30,6 +30,22 @@ After install Arduino IDE, you will see this.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/iQ6RLm8GsXc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
+Here is the code for blinking the internal LED, to use it with an external LED, replace LED_BUILTIN with the desired output pin.
+
+''' c++
+int led_pin = LED_BUILTIN;
+void setup() {
+  pinMode(led_pin, OUTPUT);
+}
+
+// the loop function runs over and over again forever
+void loop() {
+  digitalWrite(led_pin, HIGH);   // turn the LED on (HIGH is the voltage level)
+  delay(1000);                       // wait for a second
+  digitalWrite(led_pin, LOW);    // turn the LED off by making the voltage LOW
+  delay(1000);                       // wait for a second
+}
+'''
 [We need a place to put code and need some explanation for code !!! please]
 
 ## Step 3: External LED Blink
