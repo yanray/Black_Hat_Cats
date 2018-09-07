@@ -20,6 +20,12 @@ After install Arduino IDE, you will see this.
 
 ## step 2: Internal LED Blink
 
+Firstly, Open Ardunio IDE -> File -> Examples -> 1.Basics -> Blink
+
+Then, Click **Checkmark** to compile code -> Click **right arrow** to upload your code to Arduino
+
+Luckily, The Internal LED blinks, see the video below.
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/iQ6RLm8GsXc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 ## step 3: External LED Blink
