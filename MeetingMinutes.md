@@ -1,4 +1,4 @@
-Meeting minutes:
+### Meeting minutes:
 
 8/31/18 - We started the meeting with all team members present. The team crafted the Team Contract, which can be accessed anytime from our website.
 
