@@ -114,6 +114,21 @@ void move_motor(Servo motor, int value){
 
 ## Step 7: Assemble Impressive Robot 
 
+To assemble the robot, we looked at previous designs and decided the cleanest design with the parts available. We chose a laser-cut plexiglass with a breadboard glued to it, to facilitate the connections with the Arduino.
+
+![alt text](parts.jpg)
+ 
+Next, we attached the servo mounts and the servos themselves. We tried using the 3D-printed battery holders, but they were too large for the battery and didn’t provide the sturdiness we expected. In turn, we temporarily used a zip-tie.
+ 
+![alt text](servos.jpg) 
+
+We assembled the wheels to the servos with no issues. However, the ball bearing was too short, so we had to use the plastic extension shown in the picture. We are going to 3D-print a new ball bearing, because the extension causes undesirable wiggling that could lead to instability and malfunctions later in the project.
+ 
+We next mounted the Arduino (partially on top of the breadboard) and used 2 plastic extensions, nuts and bolts to provide the desired stability, as shown below.
+
+![alt text](final_prototype.jpg)
+
+
 ## Step 8: Make the Robot Go !
 Now using what we have done to run the motors, we can use it to control two motors to move in a square. Here is the code for it: 
 ``` c++
