@@ -57,9 +57,10 @@ Pick up a Potentiometer and a Resistor. [Need Picture of LED and Resistor here !
 
 *Warning!!*  Make sure your Potentiometer is connected to a Resistor at least 300ohm. Unless you want to blow up your Arduino. 
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/0pE7rAklaJY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/qJ6spCfECX0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 ## step 5: Analog Output (PWM)
+
 
 ## step 6: Parallax Servos 
 
