@@ -61,12 +61,17 @@ Pick up a Potentiometer and a Resistor. [Need Picture of LED and Resistor here !
 
 ## step 5: Analog Output (PWM)
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/FzOQpxXkZDM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 ## step 6: Parallax Servos 
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/gK3PRNAZcIo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 ## step 7: Assemble Impressive Robot 
 
 ## step 8: Make the Robot Go !
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/J6l1jtC9Hv0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 ## Extra step: 
 
