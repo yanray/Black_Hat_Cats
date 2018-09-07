@@ -1,6 +1,6 @@
-# Lab 1: Microcontroller
+[Return Home](https://yanray.github.io/Black_Hat_Cats/)
 
-[Home](https://yanray.github.io/Black_Hat_Cats/)
+# Lab 1: Microcontroller
 
 ### Objective
 Learn basics of Arduino io by controlling LEDs and motors
