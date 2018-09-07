@@ -26,7 +26,7 @@ After install Arduino IDE, you will see this.
 
 **Luckily**, The Internal LED blinks, see the video below.
 
-*Warning!!*  Make sure your Arduino IDE is connected to right COM port. Click Tools -> Serial Port list to see.
+***Warning!!***  Make sure your Arduino IDE is connected to right COM port. Click Tools -> Serial Port list to see.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/iQ6RLm8GsXc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
@@ -42,7 +42,7 @@ Pick up a LED and a Resistor. [Need Picture of LED and Resistor here !!!!]
 
 **Great!**, The External LED blinks, see the video below.
 
-*Warning!!*  Make sure your LED is connected to a Resistor at least 300ohm. Unless you want to blow up your Arduino. 
+***Warning!!***  Make sure your LED is connected to a Resistor at least 300ohm. Unless you want to blow up your Arduino. 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/0pE7rAklaJY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
@@ -55,7 +55,7 @@ Pick up a Potentiometer and a Resistor. [Need Picture of LED and Resistor here !
 **Then**, Connect Potentiometer and Resistor on breadboard, use the Analog Pin A0 and write code to read the value. Remember click **Serial monitor** to see the value. (on the top right)
 **Cool !**, Get the value of Potentiometer, see the video below.
 
-*Warning!!*  Make sure your Potentiometer is connected to a Resistor at least 300ohm. Unless you want to blow up your Arduino. 
+***Warning!!***  Make sure your Potentiometer is connected to a Resistor at least 300ohm. Unless you want to blow up your Arduino. 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/qJ6spCfECX0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
