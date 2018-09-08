@@ -164,7 +164,7 @@ See the video below.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/gK3PRNAZcIo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-*[Coding for Step 6]*
+*[Coding for Step6]*
 
 ```c++
 #include <Servo.h>
@@ -236,6 +236,7 @@ int leftServo_pin = 5;
 int rightServo_pin = 6;
 Servo leftServo;
 Servo rightServo;
+
 void start_now() {
   Serial.begin(9600);
   pinMode(analog_pin, INPUT);
@@ -283,6 +284,7 @@ If we left it like this we would have a detectable signal. Unfortunately this si
 
 From there frequency of the whistle is used to control whether the robot is moving straight, turning, or stopped, depending on how high the frequency is.
 
+*[Coding for extra Step]*
 ``` c++
 // ECE 3400 Fall 2018
 // Team 13
