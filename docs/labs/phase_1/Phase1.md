@@ -94,6 +94,29 @@ Pick up a Potentiometer and a Resistor. [Need Picture of LED and Resistor here !
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/qJ6spCfECX0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
+*[coding for Step4]*
+
+```c++
+int pushButton = 2;
+
+// the setup routine runs once when you press reset:
+void setup() {
+  // initialize serial communication at 9600 bits per second:
+  Serial.begin(9600);
+  // make the pushbutton's pin an input:
+  pinMode(pushButton, INPUT);
+}
+
+// the loop routine runs over and over again forever:
+void loop() {
+  // read the input pin:
+  int buttonState = digitalRead(pushButton);
+  // print out the state of the button:
+  Serial.println(buttonState);
+  delay(1);        // delay in between reads for stability
+}
+```
+
 ## Step 5: Analog Output (PWM)
 
 In this step, we connect **Step 3** and **Step 4** to read the potentiometer and put the output to External LED. 
