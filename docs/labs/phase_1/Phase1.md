@@ -172,7 +172,7 @@ void setup() {
 void loop() {
   //int value_analogRead = analogRead(analog_pin);
   //Serial.print(value_analogRead*5.0/MAX_READING);
-  Serial.println(" Volts");
+  //Serial.println(" Volts");
   //output_to_led(value_analogRead);
   int motor_value = 180;
   move_motor(leftServo, 180);
@@ -182,12 +182,11 @@ move_forward();
   delay(1000);
 }
 void output_to_led(int value) {
-  int new_value=map(value,0,MAX_READING,0,255);
+  int new_value=map(value,0,MAX_READING,0,255); //scale to PWM range
   analogWrite(led_pin,new_value);
 }
 void move_motor(Servo motor, int value){
-	int new_value=value;
-	motor.write(new_value);
+	motor.write(value);
 }
 void move_forward(){
  	move_motor(leftServo, 0);
