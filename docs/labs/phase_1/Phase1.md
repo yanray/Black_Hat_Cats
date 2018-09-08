@@ -172,6 +172,11 @@ We next mounted the Arduino (partially on top of the breadboard) and used 2 plas
 
 ## Step 8: Make the Robot Go !
 Now using what we have done to run the motors, we can use it to control two motors to move in a square. Here is the code for it: 
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/J6l1jtC9Hv0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+*[Coding for Step8]*
 ``` c++
  #include <Servo.h>
 int MAX_READING = 1023;
@@ -216,9 +221,9 @@ void move_forward(){
 }
 ```
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/J6l1jtC9Hv0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-
 ## Extra step: 
+
+###If you want to make more things in lab. The following would be a great reference. 
 
 The modification I added since we had extra time was a basic microphone circuit. This was done before realizing this is very similar to the next lab. Regardless, I guess we are ahead of the game.
 
