@@ -171,8 +171,7 @@ We next mounted the Arduino (partially on top of the breadboard) and used 2 plas
 
 
 ## Step 8: Make the Robot Go !
-Now using what we have done to run the motors, we can use it to control two motors to move in a square. Here is the code for it: 
-
+Now using what we have done to run the motors, we can use it to control two motors to move in a square. 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/J6l1jtC9Hv0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
@@ -197,15 +196,11 @@ void setup() {
   start_now();
 }
 void loop() {
-  //int value_analogRead = analogRead(analog_pin);
-  //Serial.print(value_analogRead*5.0/MAX_READING);
-  //Serial.println(" Volts");
-  //output_to_led(value_analogRead);
   int motor_value = 180;
   move_motor(leftServo, 180);
   move_motor(rightServo, 180);
   delay(635);
-move_forward();
+  move_forward();
   delay(1000);
 }
 void output_to_led(int value) {
