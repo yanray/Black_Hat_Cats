@@ -223,7 +223,7 @@ void move_forward(){
 
 ## Extra step: 
 
-###If you want to make more things in lab. The following would be a great reference. 
+### If you want to make more things in lab. The following would be a great reference. 
 
 The modification I added since we had extra time was a basic microphone circuit. This was done before realizing this is very similar to the next lab. Regardless, I guess we are ahead of the game.
 
