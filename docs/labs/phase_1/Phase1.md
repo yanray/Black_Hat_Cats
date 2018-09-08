@@ -94,7 +94,7 @@ Pick up a Potentiometer and a Resistor. [Need Picture of LED and Resistor here !
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/qJ6spCfECX0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-*[coding for Step4]*
+*[Coding for Step4]*
 
 ```c++
 int analog_pin = A0;
@@ -126,12 +126,15 @@ analogWrite(output_pin, value);
 
 ## Step 6: Parallax Servos 
 
-Pick up a Parallax Servo ![](Servo.jpg)    **Reminder** *Red Line = Vcc, Black Line = GND, White Line = Signal*
+Pick up a Parallax Servo ![](Servo.jpg)    
+**Reminder** *Red Line = Vcc, Black Line = GND, White Line = Signal*
 
-Unlike a regular servo that is usually limited to 180 degrees and control the angle, a continuous servo (like the one used for this lab) can be controlled with direction and speed.
-Servo
+Unlike a regular servo that is usually limited to 180 degrees and control the angle, a continuous servo (like the one used for this lab) can be controlled with direction and speed. See video below. 
 
-To run a servo, you can use Arduino’s servo library and run this code:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/gK3PRNAZcIo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+*[Coding for Step 6]*
 
 ```c++
 #include <Servo.h>
@@ -149,7 +152,6 @@ void move_motor(Servo motor, int value){
 }
 
 ```
-<iframe width="560" height="315" src="https://www.youtube.com/embed/gK3PRNAZcIo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 ## Step 7: Assemble Impressive Robot 
 
