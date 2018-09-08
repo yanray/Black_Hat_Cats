@@ -124,8 +124,7 @@ void loop() {
   move_motor(myServo, 180);
 }
 void move_motor(Servo motor, int value){
-	int new_value=value;
-	motor.write(new_value);
+	motor.write(value);
 }
 
 ```
@@ -244,7 +243,7 @@ void setup()
 
 void loop()
 {
-  leftServo.detach(); //Detach the servos so that the PWM interrupt doesnt interfere with sampling
+  leftServo.detach(); //Detach the servos so that the PPM interrupt doesnt interfere with sampling
   rightServo.detach();
   delay(30);
   for (int i = 0; i < samples; i++)
