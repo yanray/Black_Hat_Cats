@@ -126,7 +126,7 @@ analogWrite(output_pin, value);
 
 ## Step 6: Parallax Servos 
 
-Pick up a Parallax Servo ![](servos.jpg)    **Reminder** *Red Line = Vcc, Black Line = GND, White Line = Signal*
+Pick up a Parallax Servo ![](Servo.jpg)    **Reminder** *Red Line = Vcc, Black Line = GND, White Line = Signal*
 
 Unlike a regular servo that is usually limited to 180 degrees and control the angle, a continuous servo (like the one used for this lab) can be controlled with direction and speed.
 Servo
