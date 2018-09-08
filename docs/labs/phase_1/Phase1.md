@@ -146,17 +146,35 @@ See the video below.
 
 ```c++
 #include <Servo.h>
-int servo_pin = 5;
-Servo myServo;
+int MAX_READING = 1023;
+int analog_pin = A0;
+int led_pin = 11;
+int Servo_pin = 5;
+Servo MyServo;
 
+void start_now() {
+  Serial.begin(9600);
+  pinMode(analog_pin, INPUT);
+  pinMode(led_pin, OUTPUT);
+  MyServo.attach(Servo_pin);
+}
 void setup() {
-    myServo.attach(servo_pin);
+  start_now();
 }
 void loop() {
-  move_motor(myServo, 180);
+  int value_analogRead = analogRead(analog_pin);
+  Serial.print(value_analogRead*5.0/MAX_READING);
+  Serial.println(" Volts");
+  output_to_led(value_analogRead);
+  move_motor(MyServo, value_analogRead);
+}
+void output_to_led(int value) {
+  int new_value=map(value,0,MAX_READING,0,255);
+  analogWrite(led_pin,new_value);
 }
 void move_motor(Servo motor, int value){
-	motor.write(value);
+  int new_value=value;
+  motor.write(new_value);
 }
 
 ```
