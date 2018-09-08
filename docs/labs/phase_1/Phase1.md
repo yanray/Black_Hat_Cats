@@ -1,6 +1,6 @@
 [Return Home](https://yanray.github.io/Black_Hat_Cats/)
 
-**Notes**<Coding Download will be avalible after final competition>
+**Notes**(Coding Download will be avalible after final competition)
 
 # Lab 1: Microcontroller
 
