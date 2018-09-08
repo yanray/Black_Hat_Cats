@@ -35,7 +35,7 @@ After install Arduino IDE, you will see this.
 *[Coding for Step2]*
 
 ``` c++
-// the setup function runs once when you press reset or power the board
+// the setup function runs once when you press reset or power the    board
 void setup() {
   // initialize digital pin LED_BUILTIN as an output.
   pinMode(LED_BUILTIN, OUTPUT);
@@ -45,7 +45,7 @@ void setup() {
 void loop() {
   digitalWrite(LED_BUILTIN, HIGH);   // turn the LED on (HIGH is the voltage level)
   delay(1000);                       // wait for a second
-  digitalWrite(LED_BUILTIN, LOW);    // turn the LED off by making the voltage LOW
+  digitalWrite(LED_BUILTIN, LOW);    // turn the LED off by making   the voltage LOW
   delay(1000);                       // wait for a second
 }
 ```
@@ -67,7 +67,7 @@ Pick up a LED ![](led.jpg) and a Resistor![](300ohm_Resistor.jpg).
 *[Coding for Step3]*
 
 ```c++
-// the setup function runs once when you press reset or power the board
+// the setup function runs once when you press reset or power the    board
 void setup() {
   // initialize digital pin LED_BUILTIN as an output.
   pinMode(LED_BUILTIN, OUTPUT);
@@ -86,9 +86,12 @@ void loop() {
 
 After External LED Blink, Let us Read Analog value of Potentiometer ! 
 
-Pick up a Potentiometer and a Resistor. [Need Picture of LED and Resistor here !!!!]
+Pick up a Potentiometer![](potentiometer.jpg) and a Resistor![](300ohm_Resistor.jpg).
 
-**Then**, Connect Potentiometer and Resistor on breadboard, use the Analog Pin A0 and write code to read the value. Remember click **Serial monitor** to see the value. (on the top right)
+**Then**, Connect Potentiometer and Resistor on breadboard, use the Analog Pin A0 and write code to read the value. 
+
+Remember click **Serial monitor** to see the value. (on the top right of Arduino IDE)
+
 **Cool !**, Get the value of Potentiometer, see the video below.
 
 ***Warning!!***  Make sure your Potentiometer is connected to a Resistor at least 300ohm. Unless you want to blow up your Arduino. 
@@ -115,7 +118,7 @@ void loop() {
 
 ## Step 5: Analog Output (PWM)
 
-In this step, we connect **Step 3** and **Step 4** to read the potentiometer and put the output to External LED. 
+In this step, we connect **Step 3** and **Step 4** to read the value of potentiometer and put the output to External LED. 
 ***Note *** You could learn PWM [Click here](https://cei-lab.github.io/ece3400-2017/tutorials/PWM/PWM.html).
 
 To use PWM as an input, you can use analogWrite to an ‘analog’ like output:
