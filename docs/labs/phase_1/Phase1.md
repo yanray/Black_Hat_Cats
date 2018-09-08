@@ -262,11 +262,11 @@ void output_to_led(int value) {
   analogWrite(led_pin,new_value);
 }
 void move_motor(Servo motor, int value){
-	motor.write(value);
+  motor.write(value);
 }
 void move_forward(){
- 	move_motor(leftServo, 0);
-  	move_motor(rightServo,180);
+  move_motor(leftServo, 0);
+  move_motor(rightServo,180);
 }
 ```
 
