@@ -135,6 +135,10 @@ Pick up a Parallax Servo ![](Servo.jpg)
 
 Unlike a regular servo that is usually limited to 180 degrees and control the angle, a continuous servo (like the one used for this lab) can be controlled with direction and speed. See video below. 
 
+Click File -> Examples -> Servo -> knop   to open your demo coding.  
+Then we connect our coding before with Servo. To make Servo move, we connect **Step 3**, **Step 4**, **Step 5**.
+See the video below.
+
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/gK3PRNAZcIo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
