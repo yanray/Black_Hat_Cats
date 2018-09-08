@@ -108,7 +108,7 @@ void loop() {
   // read the input pin:
   value_analogRead = analogRead(analog_pin);
   Serial.println(Value_analogRead);
-  delay(1);        // delay in between reads for stability
+  delay(10);        // delay in between reads for stability
 }
 ```
 
