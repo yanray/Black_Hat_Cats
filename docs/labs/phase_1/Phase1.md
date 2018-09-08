@@ -211,8 +211,99 @@ If we left it like this we would have a detectable signal. Unfortunately this si
 
 From there frequency of the whistle is used to control whether the robot is moving straight, turning, or stopped, depending on how high the frequency is.
 
+```
+// ECE 3400 Fall 2018
+// Team 13
+// Lab 1
+#include "arduinoFFT.h"
+arduinoFFT FFT = arduinoFFT();
+#include <Servo.h>
+Servo leftServo;
+Servo rightServo;
+#define CHANNEL A0
+const uint16_t samples = 128;
+const double samplingFrequency = 9000; //sample rate
+
+unsigned int sampling_period_us;
+unsigned long microseconds;
+double vReal[samples];
+double vImag[samples];
+
+#define SCL_INDEX 0x00
+#define SCL_TIME 0x01
+#define SCL_FREQUENCY 0x02
+#define SCL_PLOT 0x03
+
+void setup()
+{
+  int leftServo_pin = 5;
+  int rightServo_pin = 6;
+  sampling_period_us = round(1000000 * (1.0 / samplingFrequency));
+  Serial.begin(115200);
+}
+
+void loop()
+{
+  leftServo.detach(); //Detach the servos so that the PWM interrupt doesnt interfere with sampling
+  rightServo.detach();
+  delay(30);
+  for (int i = 0; i < samples; i++)
+  {
+    microseconds = micros();
+    vReal[i] = analogRead(A0);
+    vImag[i] = 0;
+    while (micros() < (microseconds + sampling_period_us)) {
+    }
+  }
+  leftServo.attach(9); //reattach the servos
+  rightServo.attach(10);
+  FFT.Windowing(vReal, samples, FFT_WIN_TYP_HAMMING, FFT_FORWARD);  /* Weigh data */
+  FFT.Compute(vReal, vImag, samples, FFT_FORWARD); /* Compute FFT */
+  FFT.ComplexToMagnitude(vReal, vImag, samples); /* Compute magnitudes */
+  delay(10);
+  double f = FFT.MajorPeak(vReal, samples, samplingFrequency); //find the dominant frequency
+  int mag = vReal[(int)(f * samples / samplingFrequency)]; //find the magnitude of dominant frequency
+  if (mag > 300) { // filter out lower magnitude frequencies
+    if (f < 1300) {
+      turn_right();   // if whistle frequecny is low, turn right
+    }
+    else if (f > 1900) { //if whistle frequency is high, turn left
+      turn_left();
+    }
+    else {   // if whistle frequency is somehwere in between, go straight
+      go_forward();
+    }
+  }
+  else { //if there is no whistle, stop
+    stop_now();
+  }
+  delay(20);
+}
+
+void move_motor(Servo motor, int value) {
+  motor.write(value);
+}
+void go_forward() {
+  move_motor(leftServo, 0);
+  move_motor(rightServo, 180);
+}
 
 
+void turn_right() {
+  move_motor(leftServo, 180);
+  move_motor(rightServo, 180);
+}
+
+void turn_left() {
+  move_motor(leftServo, 0);
+  move_motor(rightServo, 0);
+}
+
+void stop_now() {
+  move_motor(leftServo, 95);
+  move_motor(rightServo, 90);
+}
+```
 
 
 
