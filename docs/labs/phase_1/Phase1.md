@@ -107,8 +107,7 @@ void setup() {
 void loop() {
   // read the input pin:
   value_analogRead = analogRead(analog_pin);
-  // print out the state of the button:
-  Serial.println(buttonState);
+  Serial.println(Value_analogRead);
   delay(1);        // delay in between reads for stability
 }
 ```
@@ -126,6 +125,9 @@ analogWrite(output_pin, value);
 <iframe width="560" height="315" src="https://www.youtube.com/embed/FzOQpxXkZDM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 ## Step 6: Parallax Servos 
+
+Pick up a Parallax Servo ![](servos.jpg)    **Reminder** *Red Line = Vcc, Black Line = GND, White Line = Signal*
+
 Unlike a regular servo that is usually limited to 180 degrees and control the angle, a continuous servo (like the one used for this lab) can be controlled with direction and speed.
 Servo
 
