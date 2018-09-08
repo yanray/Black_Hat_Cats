@@ -121,12 +121,34 @@ void loop() {
 In this step, we connect **Step 3** and **Step 4** to read the value of potentiometer and put the output to External LED. 
 ***Note *** You could learn PWM [Click here](https://cei-lab.github.io/ece3400-2017/tutorials/PWM/PWM.html).
 
-To use PWM as an input, you can use analogWrite to an ‘analog’ like output:
-```c++
-analogWrite(output_pin, value);
-```
-
 <iframe width="560" height="315" src="https://www.youtube.com/embed/FzOQpxXkZDM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+*[Coding for Step5]*
+```c++
+#include <Servo.h>
+int MAX_READING = 1023;
+int analog_pin = A0;
+int led_pin = 11;
+
+void start_now() {
+  Serial.begin(9600);
+  pinMode(analog_pin, INPUT);
+  pinMode(led_pin, OUTPUT);
+}
+void setup() {
+  start_now();
+}
+void loop() {
+  int value_analogRead = analogRead(analog_pin);
+  Serial.print(value_analogRead*5.0/MAX_READING);
+  Serial.println(" Volts");
+  output_to_led(value_analogRead);
+}
+void output_to_led(int value) {
+  int new_value=map(value,0,MAX_READING,0,255);
+  analogWrite(led_pin,new_value);
+}
+```
 
 ## Step 6: Parallax Servos 
 
@@ -173,7 +195,7 @@ void output_to_led(int value) {
   analogWrite(led_pin,new_value);
 }
 void move_motor(Servo motor, int value){
-  int new_value=value;
+  int new_value=map(value,0,MAX_READING,0,255);
   motor.write(new_value);
 }
 
