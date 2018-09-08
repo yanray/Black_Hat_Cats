@@ -56,7 +56,7 @@ After Internal LED Blink, Let us Blink an External LED !
 
 Pick up a LED ![](led.jpg) and a Resistor![](300ohm_Resistor.jpg). 
 
-**Then**, Connect LED and Resistor on breadboard, use a different Pin and modify code to blink Internal LED. 
+**Then**, Connect LED and Resistor on breadboard, use a different Pin and modify code to blink External LED. 
 
 **Great!**, The External LED blinks, see the video below.
 
