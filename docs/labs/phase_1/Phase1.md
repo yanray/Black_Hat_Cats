@@ -56,9 +56,9 @@ After Internal LED Blink, Let us Blink an External LED !
 
 Pick up a LED ![](led.jpg) and a Resistor![](300ohm_Resistor.jpg). 
 
-**Then**, Connect LED and Resistor on breadboard, use a different Pin and modify code to blink External LED. 
+**Then**, Connect LED and Resistor on breadboard, use a different Pin and modify code to blink Internal LED. 
 
-**Great!**  The External LED blinks, see the video below.
+**Great!**, The External LED blinks, see the video below.
 
 ***Warning!!***  Make sure your LED is connected to a Resistor at least 300ohm. Unless you want to blow up your Arduino. 
 
@@ -211,10 +211,11 @@ If we left it like this we would have a detectable signal. Unfortunately this si
 
 From there frequency of the whistle is used to control whether the robot is moving straight, turning, or stopped, depending on how high the frequency is.
 
-```
+``` c++
 // ECE 3400 Fall 2018
 // Team 13
 // Lab 1
+// Ian Switzer
 #include "arduinoFFT.h"
 arduinoFFT FFT = arduinoFFT();
 #include <Servo.h>
@@ -257,17 +258,17 @@ void loop()
   }
   leftServo.attach(9); //reattach the servos
   rightServo.attach(10);
-  FFT.Windowing(vReal, samples, FFT_WIN_TYP_HAMMING, FFT_FORWARD);  /* Weigh data */
-  FFT.Compute(vReal, vImag, samples, FFT_FORWARD); /* Compute FFT */
-  FFT.ComplexToMagnitude(vReal, vImag, samples); /* Compute magnitudes */
+  FFT.Windowing(vReal, samples, FFT_WIN_TYP_HAMMING, FFT_FORWARD);  //Weigh data
+  FFT.Compute(vReal, vImag, samples, FFT_FORWARD); //Compute FFT 
+  FFT.ComplexToMagnitude(vReal, vImag, samples); //Compute magnitudes 
   delay(10);
   double f = FFT.MajorPeak(vReal, samples, samplingFrequency); //find the dominant frequency
   int mag = vReal[(int)(f * samples / samplingFrequency)]; //find the magnitude of dominant frequency
-  if (mag > 300) { // filter out lower magnitude frequencies
+  if (mag > 300) { // filter out lower volume frequencies. That way someone talking won't make it turn right 
     if (f < 1300) {
-      turn_right();   // if whistle frequecny is low, turn right
+      turn_right();   // if whistle frequecny is lower than 1300 hz, turn right
     }
-    else if (f > 1900) { //if whistle frequency is high, turn left
+    else if (f > 1900) { //if whistle frequency is higher than 1900 hz, turn left
       turn_left();
     }
     else {   // if whistle frequency is somehwere in between, go straight
