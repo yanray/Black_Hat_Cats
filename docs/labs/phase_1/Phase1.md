@@ -34,7 +34,7 @@ After install Arduino IDE, you will see this.
 
 *[Coding for Step2]*
 
-``` 
+``` c++
 // the setup function runs once when you press reset or power the board
 void setup() {
   // initialize digital pin LED_BUILTIN as an output.
@@ -65,7 +65,7 @@ Pick up a LED ![](led.jpg) and a Resistor![](300ohm_Resistor.jpg).
 <iframe width="560" height="315" src="https://www.youtube.com/embed/0pE7rAklaJY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 *[Coding for Step3]*
-```
+```c++
 // the setup function runs once when you press reset or power the board
 void setup() {
   // initialize digital pin LED_BUILTIN as an output.
