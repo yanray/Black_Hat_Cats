@@ -65,6 +65,7 @@ Pick up a LED ![](led.jpg) and a Resistor![](300ohm_Resistor.jpg).
 <iframe width="560" height="315" src="https://www.youtube.com/embed/0pE7rAklaJY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 *[Coding for Step3]*
+
 ```c++
 // the setup function runs once when you press reset or power the board
 void setup() {
@@ -171,11 +172,14 @@ We next mounted the Arduino (partially on top of the breadboard) and used 2 plas
 
 
 ## Step 8: Make the Robot Go !
+
 Now using what we have done to run the motors, we can use it to control two motors to move in a square. 
+**Reminder**  Understand how to make servos move forward and backward in different velocity. 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/J6l1jtC9Hv0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 *[Coding for Step8]*
+
 ``` c++
  #include <Servo.h>
 int MAX_READING = 1023;
