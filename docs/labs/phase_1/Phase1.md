@@ -294,7 +294,7 @@ From there frequency of the whistle is used to control whether the robot is movi
 // ECE 3400 Fall 2018
 // Team 13
 // Lab 1
-// Ian Switzer
+// Ian Switzer, Alberto Lopez Delgado, Yanrui Wang, Hadi Alzayer
 #include "arduinoFFT.h"
 arduinoFFT FFT = arduinoFFT();
 #include <Servo.h>
