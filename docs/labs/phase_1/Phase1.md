@@ -73,7 +73,7 @@ Pick up a LED ![](led.jpg) and a Resistor![](300ohm_Resistor.jpg).
 int led_pin = 10; //pin connected to external LED
 void setup() {
   // initialize digital pin LED_BUILTIN as an output.
-  pinMode(LED_BUILTIN, OUTPUT);
+  pinMode(led_pin, OUTPUT);
 }
 
 // the loop function runs over and over again forever
