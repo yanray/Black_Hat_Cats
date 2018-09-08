@@ -58,7 +58,7 @@ Pick up a LED ![](led.jpg) and a Resistor![](300ohm_Resistor.jpg).
 
 **Then**, Connect LED and Resistor on breadboard, use a different Pin and modify code to blink External LED. 
 
-**Great!**, The External LED blinks, see the video below.
+**Great!**  The External LED blinks, see the video below.
 
 ***Warning!!***  Make sure your LED is connected to a Resistor at least 300ohm. Unless you want to blow up your Arduino. 
 
