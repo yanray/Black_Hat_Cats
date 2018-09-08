@@ -222,6 +222,7 @@ We next mounted the Arduino (partially on top of the breadboard) and used 2 plas
 ## Step 8: Make the Robot Go !
 
 Now using what we have done to run the motors, we can use it to control two motors to move in a square. 
+
 **Reminder**  Understand how to make servos move forward and backward in different velocity. 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/J6l1jtC9Hv0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
