@@ -23,7 +23,7 @@ Phase 3: (introduce title with ominous overtones)
 Phase 4: (introduce title with ominous overtones)
 
 ### Milestones
-Milestone 1:
+[Milestone 1:](./docs/milestones/milestone_1/milestone1.md)
 
 Milestone 2:
 
