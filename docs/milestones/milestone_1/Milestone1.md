@@ -1,12 +1,44 @@
 # Milestone 1
 
-### Team Member: Hadi Alzayer, Alberto Lopez Delgado, Yanrui Wang , Ian Switzer
+## Objectives
 
-## Objective :
+* Implement IR sensors to detect lines with Arduino
+* Implement line following algorithm 
+* Implement “grid shapes” algorithm 
 
-Learn how to use infrared reflectnce Line Sensor, and successfully make our robot follow the line and figure eight !! Besides that, we even make more challegens to our amazing robots. See below, you will get all answers. 
+## Line Detection
 
-## Sensor Set-up 
+We used the provided QRE1113 IR sensors with digital output. These sensors work by us first sending a digital pulse to the output. We then set that same pin to be an input, and time how long it takes to drop back down to logical zero. This is directly proportional to the amount of light the sensor is receiving. We then sample this into an array and convert that data into a one or zero, depending on a threshold. 
+
+``` c++
+long readQD(int pin) { //read from IR sensor
+  pinMode( pin, OUTPUT );
+  digitalWrite( pin, HIGH );
+  delayMicroseconds(10);
+  pinMode(pin, INPUT);
+
+  long time = micros();
+
+  while (digitalRead(pin) == HIGH && ((micros() - time) < 3000));
+  return (micros() - time);
+}
+
+void read_line() {
+  for (int i = 0; i < 5; i++) {
+	line_sens_data_time[i] = readQD(line_sens_pin[i]);
+  }
+}
+
+void conv_to_digi() {
+  for (int i = 0; i < 5; i++) {
+	line_sens_data_digi[i] = (line_sens_data_time[i] < threshold);
+  }
+}
+```
+
+In terms of sensor placement, we chose to place 3 sensors in the front of our robot (one in the center, and two on the sides separated at a distance slightly wider than the tape), aligned with the axis of rotation of the servomotors. This allows us to turn in place around the center senor, and makes the line tracing algorithm far more robust. 
+
+![alt text](sensors.jpg)
 
 
 ## Line Following
