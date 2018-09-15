@@ -78,6 +78,12 @@ void follow_line() {
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/EvfXH_BaLcA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
+## Figure Square
+
+Before our robot moves to figure eight, we make a easy test, which makes robot move a figure square. We even add another strip of white tape to make it more challenging. There are two different types of corner. The robot should avoid triangle-like corner and pass it. Meanwhile, it will turn in the real corner. See video below. 
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/zI6Unri7Hac" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
 ## Corner detection and Figure 8
 Since we aligned our sensors with the axis of rotation of the servo motors,  we were able to detect the intersection of two lines by watching when all sensors detected white simultaneously, using the code below: 
 
