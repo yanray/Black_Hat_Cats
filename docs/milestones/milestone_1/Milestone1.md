@@ -76,7 +76,7 @@ void follow_line() {
 }
 ```
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ufud2p73alA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/EvfXH_BaLcA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 ## Corner detection and Figure 8
 Since we aligned our sensors with the axis of rotation of the servo motors,  we were able to detect the intersection of two lines by watching when all sensors detected white simultaneously, using the code below: 
