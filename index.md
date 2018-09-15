@@ -23,13 +23,13 @@ Phase 3: (introduce title with ominous overtones)
 Phase 4: (introduce title with ominous overtones)
 
 ### Milestones
-[Milestone 1:](./docs/milestones/milestone_1/Milestone1.md)
+[Milestone 1](./docs/milestones/milestone_1/Milestone1.md)
 
-Milestone 2:
+Milestone 2
 
-Milestone 3:
+Milestone 3
 
-Milestone 4:
+Milestone 4
 
 #### [Team Contract](team_contract.pdf)
 
