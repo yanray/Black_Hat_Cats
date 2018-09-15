@@ -42,20 +42,77 @@ In terms of sensor placement, we chose to place 3 sensors in the front of our ro
 
 
 ## Line Following
+We implemented the line following algorithm as follows. If the line is detected on the left side of the robot, our detect_foward_direction function instructs follow_line to move left. If it is detected on the right, it instructs to move right. If its detected in the center, it says to go straight. 
 
-Before we test Line Following, we test our IR sensor to make sure that it could distinguish the white tape and black tape correctly. We print the sensor output on the Serial Monitor, even test it on our map. After 100% sure to get the right value, we test line following. 
+``` c++
+int detect_forward_direct() {
+  if (line_sens_data_digi[2]) { //line on right side
+	return 1;
+  }
+  else if (line_sens_data_digi[0]) { //line on left side
+	return -1;
+  }
+  else if (line_sens_data_digi[1]) { //line in middle
+	return 0;
+  }
+}
 
-Our thought is to use two sensors at first. See diagram below. 
+void follow_line() {
+  last_result = detect_forward_direct();
+  switch (last_result) {
+	case 0:
+  	move_forward();
+  	break;
+	case -1:
+  	move_left();
+  	break;
 
-![](Line_Analysis)
+	case 1:
+  	move_right();
+  	break;
 
-At first, we make our robot move forward. If the left sensor detects the white tape, we will turn robot move right. Same theory, if the right sensor detects the white tape, we will turn robot move right. In this way, we could make our robot follow the line. However, it is not stable. 
+	default: break;
+  }
+}
+```
 
-Then, we make a new iead. use three sensors. The third sensor is in the middle of our robor's bottom. What we will do is make the third sensor detects the line all the time. If the middle sensor detects the white tape, we know that our robot is almost in the middle. So in this situation, if left sensor detects the white tape, we will move it slightly right. So does the right sensor detect. **However**, if the middle sensor could not detect the white tape, we will make a bigger turn. In this adjustment, our robot is more stable than before. 
-See the video below. 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ufud2p73alA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-## Firgure Eight Travel
+## Corner detection and Figure 8
+Since we aligned our sensors with the axis of rotation of the servo motors,  we were able to detect the intersection of two lines by watching when all sensors detected white simultaneously, using the code below: 
 
+``` c++
+bool detect_corner() {
+  return line_sens_data_digi[0] && line_sens_data_digi[1] && line_sens_data_digi[2]; 
+}
+```
 
-## Breakthrough and new try
+We then created an array of instructions for what to do at a corner in an array called ‘directions’. The three possible instructions are move straight, or turn either direction. Every time the robot reaches a corner this array is checked and incremented. Thus, by correctly filling this array we can cause the robot to form a figure 8, or any basic shape.
+
+``` c++
+void start() {
+  if (detect_corner()) {
+	int current_dir = directions[counter];
+	if (current_dir == 0)
+	{
+  	move_forward();
+  	delay(200);
+	}
+	else if (current_dir == 1) {
+  	turn_right();
+	}
+	else if (current_dir == -1) {
+  	turn_left();
+	}
+	counter++;
+	if (counter == dir_length) counter = 0;
+  }
+  else {
+	follow_line();
+  }
+}
+```
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/yNTDfpOPww0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
 
