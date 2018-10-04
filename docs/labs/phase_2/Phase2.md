@@ -1,3 +1,5 @@
+[Return Home](https://yanray.github.io/Black_Hat_Cats/)
+
 #### Lab 2
 
 ## Objectives
@@ -8,13 +10,12 @@ Design a circuit using an IR sensor to detect nearby robots emitting IR at 6.08k
 The FFT library basically computes the fourier transform of the input signal and returns the magnitudes of each frequency with frequencies based on the sampling rate and sample size. We decided to use another FFT library that we have more experience with, called “arduinoFFT”.
 
 ## Robot Collision Avoidance and decoy detection
-
 # IR sensors
 The IR circuit is shown below. The IR sensor acts like a switch: it’s open (high resistance) when no IR light is received.
 
 ![alt txt](lab2_phototransistor_schem.png)
 
-#IR Voltage with Oscilloscope
+# IR Voltage with Oscilloscope
 We measured the output voltage from our IR sensor with oscilloscope and viewed the FFT. The problem is that the robots IR oscillates at 6.08kHz fundamental frequency and its harmonics 12kHz, 18kHz, etc… . This is a problem because decoys also generate 18kHz light. So it might be hard to tell if decoy is there because it could be just a robot’s 18kHz frequency, but it’s much easier to tell if a robot is there because we can only check for the 6.08kHz oscillation. Note that if we can tell if a robot is there, we can just ignore the decoys and not react to them, and only stop when facing a robot. 
 
 <iframe width="560" height="315" src="https://www.youtube.com/watch?v=QAz9nfZOm0I" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
