@@ -30,7 +30,7 @@ After install Arduino IDE, you will see this.
 
 ***Warning!!***  Make sure your Arduino IDE is connected to right COM port. Click Tools -> Serial Port list to see.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/QAz9nfZOm0I" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/iQ6RLm8GsXc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 *[Coding for Step2]*
 
