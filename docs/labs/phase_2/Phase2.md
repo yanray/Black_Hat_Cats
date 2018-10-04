@@ -18,7 +18,7 @@ The IR circuit is shown below. The IR sensor acts like a switch: it’s open (hi
 ## IR Voltage with Oscilloscope
 We measured the output voltage from our IR sensor with oscilloscope and viewed the FFT. The problem is that the robots IR oscillates at 6.08kHz fundamental frequency and its harmonics 12kHz, 18kHz, etc… . This is a problem because decoys also generate 18kHz light. So it might be hard to tell if decoy is there because it could be just a robot’s 18kHz frequency, but it’s much easier to tell if a robot is there because we can only check for the 6.08kHz oscillation. Note that if we can tell if a robot is there, we can just ignore the decoys and not react to them, and only stop when facing a robot. 
 
-<iframe width="560" height="315" src="https://www.youtube.com/watch?v=QAz9nfZOm0I" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/iQ6RLm8GsXc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 ## Filtered IR signal
 We decided to implement a RC low-pass filter with corner frequency slightly larger than 6.08kHz to detect the signal from the IR hat, filter out the decoys and account for some error. Ultimately we decided to find values of for a corner frequency of 7kHz. At first, we tried designing the filter with a fixed 100nF capacitor, which yielded a value of approximately 220Ω for the series resistor we needed to achieve the 7kHz frequency. We used the formula fc=1/(2πRC). However, these values didn’t filter out the 18kHz signal, so we decided to use a larger resistor (10kΩ), with a corresponding capacitor of approximately 2.2nF, which succeeded to filter the 18kHz decoy signal, and the harmonic components of the 6.08kHz IR hat. The filter was implemented as follows:
@@ -212,7 +212,7 @@ void compute(){
 
 The following video shows the detection of the 660Hz signal:
 
-<iframe width="560" height="315" src="https://www.youtube.com/watch?v=Ig_-GFhcsrQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/iQ6RLm8GsXc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 ### New Mechanical Design!!
 
