@@ -1,6 +1,6 @@
 [Return Home](https://yanray.github.io/Black_Hat_Cats/)
 
-# Lab 2
+# Lab 2: Analog circuitry and FFT
 
 ### Objectives
 Design a microphone circuit that detects a 660Hz whistle blow signifying the beginning of maze mapping.
@@ -211,6 +211,7 @@ void compute(){
 ```
 
 The following video shows the detection of the 660Hz signal:
+
 <iframe width="560" height="315" src="https://www.youtube.com/watch?v=Ig_-GFhcsrQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 ### New Mechanical Design!!
