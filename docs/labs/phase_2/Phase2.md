@@ -22,12 +22,12 @@ We measured the output voltage from our IR sensor with oscilloscope and viewed t
 # Filtered IR signal
 We decided to implement a RC low-pass filter with corner frequency slightly larger than 6.08kHz to detect the signal from the IR hat, filter out the decoys and account for some error. Ultimately we decided to find values of for a corner frequency of 7kHz. At first, we tried designing the filter with a fixed 100nF capacitor, which yielded a value of approximately 220Ω for the series resistor we needed to achieve the 7kHz frequency. We used the formula fc=1/(2πRC). However, these values didn’t filter out the 18kHz signal, so we decided to use a larger resistor (10kΩ), with a corresponding capacitor of approximately 2.2nF, which succeeded to filter the 18kHz decoy signal, and the harmonic components of the 6.08kHz IR hat. The filter was implemented as follows:
 
-[insert pictures in Alberto’s pc]
+![alt txt](IR sensor with filter.PNG)
 
 ## Amplification stage
 The detection of the 6.08kHz signal and filtering of the 18kHz were successful, however the signals were noticeably different only at a short range of approximately 4 inches. Thus, we decided to design an amplification stage after the low pass filter, to detect the 6.08kHz signal at a greater distance. The amplification stage was designed as follows:
 
-[insert picture of amplification circuit schematics]
+![alt txt](Amplified IR sensor.PNG)
 
 With this implementation, the sensing ability of the circuit increased significantly, as observed in the amplitude of the signal in the picture below:
 
@@ -35,8 +35,7 @@ With this implementation, the sensing ability of the circuit increased significa
 
 Since the Arduino can’t handle negative voltages, we had to make sure to include a positive voltage offset. The IR sensor added a DC offset on its own, but since we couldn’t control it, we decided to include a series capacitor to eliminate that offset, and use a voltage divider to control the voltage we wanted at the positive input of the amplifier. We introduced an offset of approximately 2.5V, hence making sure that the signal would never take values underneath 0V. 
 
-[introduce video of serial monitor readings at a distance]
-[also introduce screenshot of serial plots with different reading magnitudes at different distances]
+![alt txt](IR_sensor_range.png)
 
 Observe in the picture how the magnitude of the sensor readings of the 6.08kHz are significantly larger than the readings of the 16kHz at distances up to 9 inches. This ensures our little guy will detect other robots far enough that it will have time to avoid a collision.
 
@@ -215,8 +214,8 @@ The following video shows the detection of the 660Hz signal:
 
 ## New Mechanical Design!!
 
-![alt text](new_design1.png)
-![alt text](new_design2.png)
+![alt txt](new_design1.png)
+![alt txt](new_design2.png)
 
 In order to improve the robustness of our robot we designed and used Ian’s 3D printer to make a custom robot frame. This design holds all of our components in place where we would want them and also allows for future flexibility through its many mounting points.
 
