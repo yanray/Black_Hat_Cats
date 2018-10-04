@@ -4,8 +4,6 @@ Stay tuned for weekly updates of our doomsday device.
 
 ### Brains behind the Operation
 
-[Yanrui Wang](mailto:yw2226@cornell.edu) a.k.a. (introduce awesome nickname)
-
 [Ian Switzer](mailto:ics9@cornell.edu) a.k.a. (introduce awesome nickname) 
  
 [Hadi Alzayer](mailto:ha366@cornell.edu) a.k.a. (introduce awesome nickname) 
@@ -16,7 +14,7 @@ Stay tuned for weekly updates of our doomsday device.
 ### Labs
 [Phase 1: The devil is born](./docs/labs/phase_1/Phase1.md) 
 
-Phase 2: (introduce title with ominous overtones)
+[Phase 2: He sees and hears!](./docs/labs/phase_2/Phase2.md)
 
 Phase 3: (introduce title with ominous overtones)
 
