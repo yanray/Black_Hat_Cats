@@ -1,7 +1,5 @@
 [Return Home](https://yanray.github.io/Black_Hat_Cats/)
 
-**Notes**(Coding Download will be available after final competition)
-
 # Lab 1: Microcontroller
 
 ### Objective
@@ -14,7 +12,7 @@
 
 **subteam 2**: Yanrui Wang , Ian Switzer
 
-## Step 1: Pre-lab work
+## Pre-lab work
 
 [Click here](https://www.arduino.cc/en/Main/Software) to download Arduino IDE.
 
@@ -22,7 +20,7 @@ After install Arduino IDE, you will see this.
 
 ![alt txt](Arduino_IDE.png)
 
-## Step 2: Internal LED Blink
+## Internal LED Blink
 
 **Firstly**, Open Ardunio IDE -> File -> Examples -> 1.Basics -> Blink
 
@@ -52,7 +50,7 @@ void loop() {
 }
 ```
 
-## Step 3: External LED Blink
+## External LED Blink
 
 After Internal LED Blink, Let us Blink an External LED ! 
 
@@ -85,7 +83,7 @@ void loop() {
 }
 ```
 
-## Step 4: Read the potentiometer 
+## Read the potentiometer 
 
 After External LED Blink, Let us Read Analog value of Potentiometer ! 
 
@@ -119,7 +117,7 @@ void loop() {
 }
 ```
 
-## Step 5: Analog Output (PWM)
+## Analog Output (PWM)
 
 In this step, we connect **Step 3** and **Step 4** to read the value of potentiometer and put the output to External LED. 
 
@@ -154,7 +152,7 @@ void output_to_led(int value) {
 }
 ```
 
-## Step 6: Parallax Servos 
+## Parallax Servos 
 
 Pick up a Parallax Servo ![](Servo.jpg)    
 **Reminder** *Red Line = Vcc, Black Line = GND, White Line = Signal*
@@ -205,7 +203,7 @@ void move_motor(Servo motor, int value){
 
 ```
 
-## Step 7: Assemble Impressive Robot 
+## Assemble Impressive Robot 
 
 To assemble the robot, we looked at previous designs and decided the cleanest design with the parts available. We chose a laser-cut plexiglass with a breadboard glued to it, to facilitate the connections with the Arduino.
 
@@ -222,7 +220,7 @@ We next mounted the Arduino (partially on top of the breadboard) and used 2 plas
 ![alt text](final_prototype.jpg)
 
 
-## Step 8: Make the Robot Go !
+## Make the Robot Go!
 
 Now using what we have done to run the motors, we can use it to control two motors to move in a square. 
 
