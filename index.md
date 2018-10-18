@@ -23,7 +23,7 @@ Phase 4: (introduce title with ominous overtones)
 ### Milestones
 [Milestone 1](./docs/milestones/milestone_1/Milestone1.md)
 
-Milestone 2
+[Milestone 2](./docs/milestones/milestone_2/Milestone2.md)
 
 Milestone 3
 
