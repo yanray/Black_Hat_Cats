@@ -10,7 +10,7 @@
 
 ## Wall Detection (with line following)
 
-We used the provided SHARP IR sensors provided [seen here](Black_Hat_Cats/docs/milestones/milestone_2/20181017_211725). We proceeded to test the range of the sensors by connecting them to an analog input in the Arduino, and placing pieces of white cardboard in front of them. 
+We used the provided SHARP IR sensors provided [seen here](Black_Hat_Cats/docs/milestones/milestone_2/20181017_211725.jpg). We proceeded to test the range of the sensors by connecting them to an analog input in the Arduino, and placing pieces of white cardboard in front of them. 
 
 After checking the sensor worked properly, we proceeded to check the magnitude reading of the sensor at different distances, so that we could set a threshold. 
 
