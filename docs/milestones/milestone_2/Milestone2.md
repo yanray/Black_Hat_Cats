@@ -32,7 +32,7 @@ We used an LED strip to display when the different sensors detect something. The
 <iframe width="560" height="315" src="https://www.youtube.com/embed/0ifs3XyE3MU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 ## Robot Detection and collision avoidance
-The IR detection is thoroughly explained in [Lab 2](https://github.com/yanray/Black_Hat_Cats/docs/labs/phase_2/Phase2.md). We added code to signal when the robot has detected the IR hat (simulation of other robot, placed at approximately 5.5 inches above ground) using the LED strip, and instruct the robot to avoid the collision. In our case, we decided that the best course of action was to stop wherever it detects the IR signal, and resume motion once it doesn't detect it.
+The IR detection is thoroughly explained in [Lab 2](https://github.com/yanray/Black_Hat_Cats/tree/master/docs/labs/phase_2). We added code to signal when the robot has detected the IR hat (simulation of other robot, placed at approximately 5.5 inches above ground) using the LED strip, and instruct the robot to avoid the collision. In our case, we decided that the best course of action was to stop wherever it detects the IR signal, and resume motion once it doesn't detect it.
 
 The portion of the code that takes care of this will be added to the following section.
 
