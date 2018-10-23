@@ -16,7 +16,7 @@ Stay tuned for weekly updates of our doomsday device.
 
 [Phase 2: He sees and hears!](./docs/labs/phase_2/Phase2.md)
 
-Phase 3: (introduce title with ominous overtones)
+[Phase 3: Apocalypse is Inminent](./docs/labs/phase_2/Phase3.md)
 
 Phase 4: (introduce title with ominous overtones)
 
