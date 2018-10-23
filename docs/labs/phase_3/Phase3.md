@@ -20,7 +20,7 @@ After deciding on the data structure, as discussed in the previous section, we r
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/QAz9nfZOm0I" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-![alt_text](RF_roger.PNG)
+![alt txt](RF_roger.PNG)
 
 ### Partial integration
 For this part, we started integrating the code for RF communication with the actual systems of the robot. For space concerns, we will not show the code for this part, as it is very similar to that in the next section, Final Integration. In this part, the robot traverses the maze using line following, wall detection, and transmits this information to the base station, which displays it in the GUI.
