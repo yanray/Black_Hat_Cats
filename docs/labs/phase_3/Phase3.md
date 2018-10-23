@@ -10,6 +10,15 @@
 This lab integrates systems that we had thoroughly developed and explained in previous labs and milestones. Below, we document the new content for this lab, RF communication between Arduinos using the transceivers provided, and the underlying software. Refer to our [main page](https://yanray.github.io/Black_Hat_Cats) to find information about subjects like line following, collision avoidance, wall following, and 660 Hz audio signal detection.
 
 ### Data structure
+Because the Arduino has a very limited memory (~2KB), we decided to store all the grid's information in a 2D byte array, where the first and second indices represent the column and row respectively, and the value determines the walls we have observed. We use the following convention, for a block in the grid array, the least significant bit represents if the eastern wall is there, the 2nd bit represents the northern wall, 3rd bit western wall, and 4th bit western wall. We have 4 bits unused, that we might utilize later on for treasure information. Also orientation can be 1 if we are facing east, 2 if we are facing north, 4 if we are facing west, and 8 if we are facing south. And this is done so we can easily multiply the boolean output of the front and right sensors by the orientation and embed it in the grid information byte (of course, shifting (or taking the remainder) is needed when the multipication output is greater than 15) so we can have only one line to compute the new block information. 
+
+``` c++
+grid[row][col] |= frontSensor * orientation | rightSensor * orientation * 8 | frontSensor * orientation >> 16 | rightSensor * orientation * 8 >> 16;
+```
+
+To transmit the data, we embed the column, row, and information byte (each of these is one byte) into a long (again, one byte of the long remains unused) and transmit it to the radio. We do the embedding by adding (or using bitwise-OR) and then shift it by the desired amount to fit everything.
+
+Although as of now, our navigation algorithm (right wall following) doesn't require the robots to have a copy of the grid, we keep it stored on board just in case we decided to implement Depth First Search or another algorithm for navigation.
 
 ### RF communication and maze mapping simulation
 For this lab, we were provided 2 Nordic nRF24L01+ transceivers (with breakout boards for easier mounting on the Arduinos), and 1 extra Arduino Uno. WATCH OUT for these RF modules!!! They broke very often and very easily. We didn’t have any issues with it, but several teams did. 
