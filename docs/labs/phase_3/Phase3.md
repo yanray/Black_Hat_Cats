@@ -1,17 +1,17 @@
-#### Lab 3
+# Lab 3
 
-## Objectives
+### Objectives
 * Make a robot that can start on a 660Hz tone
 * Navigate a small test maze autonomously
 * Send the maze information it discovers wirelessly to a base station
 * Display maze information on a screen for debugging
 
-## Overview
+### Overview
 This lab integrates systems that we had thoroughly developed and explained in previous labs and milestones. Below, we document the new content for this lab, RF communication between Arduinos using the transceivers provided, and the underlying software. Refer to our [main page](https://yanray.github.io/Black_Hat_Cats) to find information about subjects like line following, collision avoidance, wall following, and 660 Hz audio signal detection.
 
-## Data structure
+### Data structure
 
-## RF communication and maze mapping simulation
+### RF communication and maze mapping simulation
 For this lab, we were provided 2 Nordic nRF24L01+ transceivers (with breakout boards for easier mounting on the Arduinos), and 1 extra Arduino Uno. WATCH OUT for these RF modules!!! They broke very often and very easily. We didn’t have any issues with it, but several teams did. 
 
 These radios were connected to digital pins 9 to 13, and powered with 3.3V. We had to download the [RF24 Arduino Library](https://github.com/maniacbug/RF24) and were given a [basic sketch](https://github.com/CEI-lab/ece3400-2018/blob/master/docs/Solutions/lab4/GettingStarted/GettingStarted.ino) as a guide to build our communication protocol.
@@ -22,7 +22,7 @@ After deciding on the data structure, as discussed in the previous section, we r
 
 ![alt text](RF_roger.PNG)
 
-## Partial integration
+### Partial integration
 For this part, we started integrating the code for RF communication with the actual systems of the robot. For space concerns, we will not show the code for this part, as it is very similar to that in the next section, Final Integration. In this part, the robot traverses the maze using line following, wall detection, and transmits this information to the base station, which displays it in the GUI.
 
 <iframe width="560" height="315" src="https://www.youtube.com/watch?v=Ig_-GFhcsrQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
@@ -174,13 +174,13 @@ void print_toGUI(byte x, byte y, byte info){
 }
 ```
 
-## Final Integration
+### Final Integration
 To conclude the lab, we connected all systems to test the overall performance of the robot. Keep in mind we are using whistle detection (660Hz sound), maze navigation (line/wall following), robot detection (6.08kHz IR signal), decoy avoidance (18kHz IR signal), and data transmission with a base station that displays the detected walls on the GUI given. Also notice in the background the soundtrack of Mission Impossible, which covers a wide range of frequencies, introducing noise to the environment to test the robustness of our audio filtering.
 
-# Video
+#### Video
 <iframe width="560" height="315" src="https://www.youtube.com/watch?v=Ig_-GFhcsrQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-# Code
+#### Code
 ``` c++
 #include <Servo.h>
 #include "arduinoFFT.h"
@@ -620,3 +620,4 @@ void transmit(unsigned long data) {
   }
 }
 ```
+[Go back to top](#)
