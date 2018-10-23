@@ -18,14 +18,14 @@ These radios were connected to digital pins 9 to 13, and powered with 3.3V. We h
 
 After deciding on the data structure, as discussed in the previous section, we ran a small simulation of the maze navigation to test communication between the Arduinos. Find below a video demonstration and a picture of the command prompt showing the position and walls detected during the simulation:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/QAz9nfZOm0I" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/JTi3uWHZhBk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 ![alt txt](RF_roger.PNG)
 
 ### Partial integration
 For this part, we started integrating the code for RF communication with the actual systems of the robot. For space concerns, we will not show the code for this part, as it is very similar to that in the next section, Final Integration. In this part, the robot traverses the maze using line following, wall detection, and transmits this information to the base station, which displays it in the GUI.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/QAz9nfZOm0I" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/hYONH2-k_cY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 For this part, the base station was programmed as follows:
 
