@@ -383,5 +383,4 @@ void stop_now() {
 }
 ```
 
-
-
+[Go back to top](#)
