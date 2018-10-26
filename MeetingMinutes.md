@@ -13,3 +13,9 @@
 9/28/18 - Today’s meeting began with only Ian and Alberto present. Hadi had to go out of town for the weekend for personal reasons, but we are an understanding group of fellas and won’t put him in the Hall of Shame. We reviewed the work we had done during the past two weeks, and realized Lab 2 is almost done. We need to if the filtering of the 18kHz decoy signal works correctly when we increase the strength of the IR signal.
 
 10/5/18 - We started the meeting without Ian today. He is so going on the Hall of Shame. We reviewed the Lab 2 report, which was uploaded to the website last Wednesday, and everything looked fine. We discussed which classes we’re taking next semester, and talked about Hadi’s accomplishment: he completed an IRONMAN, so, productive team bonding session. Hey! No judging! We did our work ahead of time, we deserve a break. See y’all next week. Robot is 37.2% awesomer than last week.
+
+10/12/18 - Did we meet this week? hmmm
+
+10/19/18 - We started the meeting with all members present. We discussed the fire that’s currently burning under our asses, e.g. the lab that’s due this Sunday. We decided to go to the lab later today to work on it. #Pray4team13.
+
+10/26/18 - We started the meeting with all members present, so no Hall of Shame for anyone. We’re on a roll! We took 5 minutes to pat each other in the back because we finished Lab 3 in time =). Today, we discussed our progress for Lab 4, and worked a little bit on it, but ultimately decided to work out the rest of it during next Wednesday’s lab session. Way to go, team!
