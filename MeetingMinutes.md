@@ -19,3 +19,7 @@
 10/19/18 - We started the meeting with all members present. We discussed the fire that’s currently burning under our asses, e.g. the lab that’s due this Sunday. We decided to go to the lab later today to work on it. #Pray4team13.
 
 10/26/18 - We started the meeting with all members present, so no Hall of Shame for anyone. We’re on a roll! We took 5 minutes to pat each other in the back because we finished Lab 3 in time =). Today, we discussed our progress for Lab 4, and worked a little bit on it, but ultimately decided to work out the rest of it during next Wednesday’s lab session. Way to go, team!
+
+11/2/18 - We started the meeting with all team members present. Decided to complete lab during next lab session.
+
+11/9/18 - The team convened with all team members present, and in crisis mode. The decision to leave the work for the lab session proved very poor. Now we need to finish lab 4 and milestone 3 by tonight, but Hadi did some networking, and got us some good, academic integrity compliant deals.
