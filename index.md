@@ -4,12 +4,11 @@ Stay tuned for weekly updates of our doomsday device.
 
 ### Brains behind the Operation
 
-[Ian Switzer](mailto:ics9@cornell.edu) a.k.a. (introduce awesome nickname) 
+[Ian Switzer](mailto:ics9@cornell.edu) a.k.a. **Hackerman**
  
-[Hadi Alzayer](mailto:ha366@cornell.edu) a.k.a. (introduce awesome nickname) 
+[Hadi Alzayer](mailto:ha366@cornell.edu) a.k.a. **IRONMAN** 
 
-[Alberto Lopez Delgado](mailto:al2367@cornell.edu) a.k.a. (introduce awesome nickname) 
-
+[Alberto Lopez Delgado](mailto:al2367@cornell.edu) a.k.a. **Verigod** 
 
 ### Labs
 [Phase 1: The devil is born](./docs/labs/phase_1/Phase1.md) 
